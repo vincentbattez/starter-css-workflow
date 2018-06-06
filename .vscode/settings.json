@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    "yarn.lock": true,
+    ".vscode": true,
+    "node_modules": true,
+    
+    ".babelrc": true,
+    "package-lock.json": true,
+    ".eslintrc.json": true,
+    
+    "webpack.*.js": true,
+    ".gitignore": true,
+    "compile.config": true,
+    // "public": true,
+  },
+    "eslint.options": {
+        "configFile": "./.eslintrc.json"
+    },
+    "editor.tabSize": 2,
+}
