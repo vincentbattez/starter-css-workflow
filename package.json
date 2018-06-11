@@ -43,7 +43,7 @@
   },
   "browserslist": [
     "last 2 versions",
-    "ie >= 9",
+    "ie >= 10",
     "ios >= 8"
   ]
 }

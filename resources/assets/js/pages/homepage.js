@@ -1,16 +1,11 @@
 /*———————————————————————————————————*\
-    $ IMPORTS
-\*———————————————————————————————————*/
-import * as navbar from '../components/navbar';
+    $ HOMEPAGE
+\*———————————————————————————————————*//*
+  @required: <body id="page-homepage">
 
-export default {
-  init() { // JS déclanché en premier
-    // Appel des fonctions provenant des composants
-    navbar.open();
-    // Code perso
-    console.log('Je suis dans la Homepage');
-  },
-  finalize() {
-    // JS déclanché après le JS du init()
-  },
-};
+*/
+export default function(){
+  if ($('#page-homepage').length > 0) {
+    console.log('homepage.js');
+  }
+}

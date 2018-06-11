@@ -1,30 +1,17 @@
-console.log("ready!");
-/*———————————————————————————————————*\
-    $ LIBRAIRIES
-\*———————————————————————————————————*/
-import 'jquery';
-import './lib/unelib';
-
 /*———————————————————————————————————*\
     $ PAGES
 \*———————————————————————————————————*/
-import Router from './util/Router';
 import common from './common';
 import homepage from './pages/homepage';
-
 /*———————————————————————————————————*\
     $ ROUTER
-\*———————————————————————————————————*//*
-  <body class="homepage">
-
-*/
-const routes = new Router({
+\*———————————————————————————————————*/
+jQuery(document).ready(function () {
+  console.log("app.js start !");
   // Commun
-  common,
+  common(),
   // Toutes les autres pages
-  homepage,
-});
+  homepage()
 
-// Load Events
-// eslint-disable-next-line rule
-jQuery(document).ready(() => routes.loadEvents());
+  console.log("app.js end !");
+});
