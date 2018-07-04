@@ -1,4 +1,5 @@
 # starter-css-workflow avec webpack
+Lien github : https://github.com/vincentbattez/starter-integration.html-js
 
 # Getting start
 ```bash
