@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const config             = require("./compile.config");
 
-let devtool = (sourcemap) ? 'source-map' : ' ';
+let devtool = (config.sourcemap) ? 'source-map' : ' ';
 module.exports = merge(common, {
   devtool: devtool, // Active les source-map selon la config choisie
   module: {
@@ -24,7 +24,7 @@ module.exports = merge(common, {
               loader: 'css-loader',
               options: {
                 importLoaders: 1,
-                sourceMap: sourcemap,
+                sourceMap: config.sourcemap,
               }
             },
             {
@@ -35,13 +35,13 @@ module.exports = merge(common, {
                   require('autoprefixer')(),
                   require('css-mqpacker')(), // concat les médias
                 ],
-                sourceMap: sourcemap,
+                sourceMap: config.sourcemap,
               }
             },
             {
               loader: 'sass-loader',
               options: {
-                sourceMap: sourcemap
+                sourceMap: config.sourcemap
               }
             },
           ],

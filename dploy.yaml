@@ -1,0 +1,12 @@
+prod:
+    scheme: ftp
+    host: ftp.my-dev-server.com
+    port: 21
+    user: user
+    pass: password
+    check: true
+    path:
+        local: public/
+        remote: PATH/TO/PROD/SERVER/PUBLIC
+    # include:
+    #     "public/css/**/*": "./assets/styles/"

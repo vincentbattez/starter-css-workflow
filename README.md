@@ -30,8 +30,18 @@ npm run watch # same
 
 npm run prod  # Build for production
 
+npm run dploy # Deployement
+
 npm run doc   # create documentation  js
 ```
+
+# Deployement
+Configurer le fichier `dploy.yaml` [Voir la documentation](https://lucasmotta.github.io/dploy/)
+```bash
+# Deployement
+npm run dploy
+```
+
 
 # Add JS file
 **1) Ajouter ton fichier JS dans l'une des catégories suivante :**
